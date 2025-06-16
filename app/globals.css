@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Manly Colors - replacing electric colors */
+    --manly-blue: #1e3a8a;
+    --manly-green: #065f46;
+    --manly-orange: #9f580a;
+    --manly-purple: #5b21b6;
+    --manly-red: #7f1d1d;
+    --manly-cyan: #155e75;
+    --manly-yellow: #92400e;
+    --manly-pink: #831843;
+    --manly-lime: #3f6212;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer utilities {
+  .manly-blue {
+    color: var(--manly-blue);
+  }
+  .bg-manly-blue {
+    background-color: var(--manly-blue);
+  }
+  .manly-green {
+    color: var(--manly-green);
+  }
+  .bg-manly-green {
+    background-color: var(--manly-green);
+  }
+  .manly-orange {
+    color: var(--manly-orange);
+  }
+  .bg-manly-orange {
+    background-color: var(--manly-orange);
+  }
+  .manly-purple {
+    color: var(--manly-purple);
+  }
+  .bg-manly-purple {
+    background-color: var(--manly-purple);
+  }
+  .manly-red {
+    color: var(--manly-red);
+  }
+  .bg-manly-red {
+    background-color: var(--manly-red);
+  }
+  .manly-cyan {
+    color: var(--manly-cyan);
+  }
+  .bg-manly-cyan {
+    background-color: var(--manly-cyan);
+  }
+  .manly-yellow {
+    color: var(--manly-yellow);
+  }
+  .bg-manly-yellow {
+    background-color: var(--manly-yellow);
+  }
+  .manly-pink {
+    color: var(--manly-pink);
+  }
+  .bg-manly-pink {
+    background-color: var(--manly-pink);
+  }
+  .manly-lime {
+    color: var(--manly-lime);
+  }
+  .bg-manly-lime {
+    background-color: var(--manly-lime);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
